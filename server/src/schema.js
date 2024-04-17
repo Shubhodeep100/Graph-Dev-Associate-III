@@ -1,4 +1,4 @@
-const gql = require('graphql-tag');
+const gql = require("graphql-tag");
 
 const typeDefs = gql`
   type Query {
@@ -23,6 +23,14 @@ const typeDefs = gql`
     description: String
     "The number of times a track has viewed"
     numberOfViews: Int
+  }
+  "a Module is a single unit of teaching. Multiple Modules compose a Track"
+  type Module {
+    id: ID!
+    "The Module's title"
+    title: String!
+    "The Module's length in minutes"
+    length: Int
   }
 
   "Author of a complete Track or a Module"
