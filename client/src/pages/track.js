@@ -7,3 +7,5 @@ const Track = () => {
     const {trackId} = useParams();
     return <Layout></Layout>
 }
+
+export default Track;
