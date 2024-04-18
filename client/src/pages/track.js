@@ -1,6 +1,7 @@
 import React from "react";
 import { gql, useQuery } from "@apollo/client";
 import { Layout, QueryResult } from "../components";
+import TrackDetail from "../components/track-detail";
 import { useParams } from "react-router-dom";
 
 const GET_TRACK = gql`
